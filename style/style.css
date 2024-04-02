@@ -1,0 +1,216 @@
+html,
+body {
+	margin: 0px;
+	font-family: "Pacifico", cursive;
+	font-weight: lighter;
+	font-style: normal;
+	height: 100%;
+	box-sizing: border-box;
+	width: 90%;
+	margin: 0 auto;
+}
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+.container_index {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.7)),
+		url("../assets/img/backgroundImg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.index_button {
+	display: inline-block;
+	padding: 40px 80px;
+	background-color: transparent; /* Fondo transparente */
+	color: white;
+	text-decoration: none;
+	border: 1px solid white;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	font-size: 5rem;
+}
+header {
+	position: sticky;
+	top: 0;
+	background-color: white;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	height: 60px;
+	border-bottom: 2px black solid;
+	align-items: center;
+}
+nav a {
+	color: black;
+	text-decoration: none;
+	margin-left: 2px;
+}
+nav a .nav_brand {
+	display: flex;
+	align-items: center;
+}
+nav a .nav_brand h1 {
+	margin-left: 3px;
+}
+
+.nav_brand_img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.7)),
+		url("../assets/img/chessbrand.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+nav ul {
+	display: flex;
+	width: 50%;
+	justify-content: flex-end;
+	list-style: none;
+}
+nav ul a {
+	margin-right: 70px;
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+
+.footer_container {
+	display: flex;
+	justify-content: space-around;
+	border-top: 2px black solid;
+}
+
+.footer_container_items ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+.footer_container_items ul li {
+	padding-bottom: 20px;
+}
+.footer_container_items ul a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+}
+.footer_container_items ul a {
+	text-decoration: none;
+	cursor: pointer;
+	color: black;
+	display: flex;
+}
+.footer_container_items ul a span {
+	margin-left: 4px;
+}
+
+.QR_img {
+	width: 150px;
+	height: 150px;
+	background-image: url("../assets/img/qrpng.png");
+	border-radius: 5px;
+	background-size: cover;
+	background-position: center;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: 5px;
+	align-items: center;
+	justify-content: center;
+}
+.container_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+form {
+	padding: 10px 20px;
+	margin: 2px;
+}
+.form_input {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+}
+.form_input label {
+	font-size: 1rem;
+}
+.form_input input {
+	font-size: 1.5rem;
+	border: none; /* Elimina todos los bordes */
+	border-bottom: 1px solid black; /* Establece solo la línea inferior */
+	outline: none; /* Elimina el contorno al hacer clic en el input */
+}
+.container_button {
+	text-align: center;
+}
+form button {
+	background-color: #4caf50; /* Color de fondo */
+	color: white; /* Color del texto */
+	padding: 10px 20px; /* Espaciado interno */
+	border: none; /* Quita el borde */
+	border-radius: 5px; /* Bordes redondeados */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+form button:hover {
+	background-color: #458ba0;
+}
+::placeholder {
+	font-family: "Pacifico", cursive;
+	font-weight: 400;
+	font-style: normal;
+}
+.about_description {
+	overflow: hidden;
+}
+.about_description img {
+	width: 400px;
+	margin-right: 20px;
+	float: left;
+	shape-outside: margin-box;
+}
+.about_description p {
+	margin: 0;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+.card_group {
+	display: flex;
+	flex-wrap: wrap;
+}
+.card {
+	flex: 1 1 19%;
+	border: 1px black solid;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	margin: 5px;
+	height: 500px;
+	max-width: 19%;
+}
+.card_img {
+	flex-grow: 1;
+	height: 50%;
+	background-image: url("../assets/img/moda.jpg");
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background-size: cover;
+	background-position: center;
+}
+.card_detail {
+	padding: 5px;
+}
