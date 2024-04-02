@@ -8,6 +8,14 @@ body {
 	box-sizing: border-box;
 	width: 90%;
 	margin: 0 auto;
+	color: #bda0a2;
+	background-color: #ffe6db;
+}
+html {
+	background-color: white;
+}
+body a {
+	color: #bda0a2;
 }
 .contenedor {
 	display: flex;
@@ -30,7 +38,6 @@ body {
 	display: inline-block;
 	padding: 40px 80px;
 	background-color: transparent; /* Fondo transparente */
-	color: white;
 	text-decoration: none;
 	border: 1px solid white;
 	border-radius: 5px;
@@ -40,17 +47,16 @@ body {
 header {
 	position: sticky;
 	top: 0;
-	background-color: white;
+	background-color: #d1eaee;
 }
 nav {
 	display: flex;
 	justify-content: space-between;
 	height: 60px;
-	border-bottom: 2px black solid;
+	border-bottom: 2px rgb(207, 207, 207) solid;
 	align-items: center;
 }
 nav a {
-	color: black;
 	text-decoration: none;
 	margin-left: 2px;
 }
@@ -82,13 +88,14 @@ nav ul a {
 	margin-right: 70px;
 	text-decoration: none;
 	cursor: pointer;
-	color: black;
 }
-
+footer {
+	background-color: #d1eaee;
+}
 .footer_container {
 	display: flex;
 	justify-content: space-around;
-	border-top: 2px black solid;
+	border-top: 2px rgb(207, 207, 207) solid;
 }
 
 .footer_container_items ul {
@@ -102,12 +109,11 @@ nav ul a {
 .footer_container_items ul a {
 	text-decoration: none;
 	cursor: pointer;
-	color: black;
 }
 .footer_container_items ul a {
 	text-decoration: none;
 	cursor: pointer;
-	color: black;
+
 	display: flex;
 }
 .footer_container_items ul a span {
@@ -129,6 +135,7 @@ main {
 	padding: 5px;
 	align-items: center;
 	justify-content: center;
+	background-color: #ffe6db;
 }
 .container_form {
 	display: flex;
@@ -158,16 +165,9 @@ form {
 .container_button {
 	text-align: center;
 }
-form button {
-	background-color: #4caf50; /* Color de fondo */
-	color: white; /* Color del texto */
-	padding: 10px 20px; /* Espaciado interno */
-	border: none; /* Quita el borde */
-	border-radius: 5px; /* Bordes redondeados */
-	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-}
+
 form button:hover {
-	background-color: #458ba0;
+	background-color: #cbc8b5;
 }
 ::placeholder {
 	font-family: "Pacifico", cursive;
@@ -193,7 +193,7 @@ form button:hover {
 	flex-wrap: wrap;
 }
 .card {
-	flex: 1 1 19%;
+	flex: 0 0 calc(19% - 10px);
 	border: 1px black solid;
 	border-radius: 5px;
 	display: flex;
@@ -201,6 +201,7 @@ form button:hover {
 	margin: 5px;
 	height: 500px;
 	max-width: 19%;
+	min-width: 19%;
 }
 .card_img {
 	flex-grow: 1;
@@ -213,4 +214,36 @@ form button:hover {
 }
 .card_detail {
 	padding: 5px;
+}
+button {
+	background-color: #d1eaeeff; /* Color azul como ejemplo */
+	padding: 10px 20px; /* Espaciado interno */
+	border: none; /* Quita el borde */
+	border-radius: 5px; /* Bordes redondeados */
+	cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+nav a.active {
+	border-bottom: 2px solid #007bff; /* Color del subrayado para el enlace activo */
+}
+@media screen and (max-width: 1500px) {
+	.card {
+		flex: 1 1 calc(23% - 10px);
+		max-width: 23%;
+		min-width: 23%;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.card {
+		flex: 1 1 calc(30% - 10px);
+		max-width: 30%;
+		min-width: 30%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.card {
+		flex: 1 1 calc(45% - 10px);
+		max-width: 45%;
+		min-width: 45%;
+	}
 }
